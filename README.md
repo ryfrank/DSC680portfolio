@@ -14,9 +14,9 @@ Portfolio for DSC680
   a.	Presentation, Paper, and Infographic on changes in child care costs
 7.	Lottery Information
   a.	Tableau Reporting on Lottery results
-8.	White House Visitor Log
-  a.	Notebook with data extraction and visualization of White House Visitor Log data
-9.	Loan Approval Model
-  a.	Use training data to create a model to predict if a Loan is approved, using KNN and tuning hyperparameters
-10.	Improve Game Attendance
-  a.	Use data from MLB game attendance and features to make suggestions to improve attendance
+8.	Recommender Engine
+  a.	Code and results in creating a recommender engine for movies based on user interest
+9.	TSA Complaints
+  a.	Tableu viz and analysis of 10 year period of TSA complaints
+10.	Electric Car Analysis
+  a.	presentation on effectiveness of EV replacing ICE cars
