@@ -1,0 +1,2409 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0520.1026                               -->
+<workbook original-version='18.1' source-build='2025.1.2 (20251.25.0520.1026)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Top 10 (all-weeks-countries-netflix)' inline='true' name='federated.1najukk1sf6t2e1fcwya11b9wvlq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='all-weeks-countries-netflix' name='excel-direct.1f5cwqi18mh6px121c22010tg0x5'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Ryan/Documents/DSC 640/all-weeks-countries-netflix.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1f5cwqi18mh6px121c22010tg0x5' name='Top 10' table='[&apos;Top 10$&apos;]' type='table'>
+          <columns gridOrigin='A1:H10001:no:A1:H10001:0' header='yes' outcome='6'>
+            <column datatype='string' name='country_name' ordinal='0' />
+            <column datatype='string' name='country_iso2' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy-MM-dd' name='week' ordinal='2' />
+            <column datatype='string' name='category' ordinal='3' />
+            <column datatype='integer' name='weekly_rank' ordinal='4' />
+            <column datatype='string' name='show_title' ordinal='5' />
+            <column datatype='string' name='season_title' ordinal='6' />
+            <column datatype='integer' name='cumulative_weeks_in_top_10' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Top 10]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:H10001:no:A1:H10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[country_name]</local-name>
+            <parent-name>[Top 10]</parent-name>
+            <remote-alias>country_name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Top 10_31688FE249E64AA8BCDF5A1EE4C30D48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country_iso2</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[country_iso2]</local-name>
+            <parent-name>[Top 10]</parent-name>
+            <remote-alias>country_iso2</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Top 10_31688FE249E64AA8BCDF5A1EE4C30D48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>week</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[week]</local-name>
+            <parent-name>[Top 10]</parent-name>
+            <remote-alias>week</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Top 10_31688FE249E64AA8BCDF5A1EE4C30D48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[category]</local-name>
+            <parent-name>[Top 10]</parent-name>
+            <remote-alias>category</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Top 10_31688FE249E64AA8BCDF5A1EE4C30D48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weekly_rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[weekly_rank]</local-name>
+            <parent-name>[Top 10]</parent-name>
+            <remote-alias>weekly_rank</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Top 10_31688FE249E64AA8BCDF5A1EE4C30D48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>show_title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[show_title]</local-name>
+            <parent-name>[Top 10]</parent-name>
+            <remote-alias>show_title</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Top 10_31688FE249E64AA8BCDF5A1EE4C30D48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season_title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[season_title]</local-name>
+            <parent-name>[Top 10]</parent-name>
+            <remote-alias>season_title</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Top 10_31688FE249E64AA8BCDF5A1EE4C30D48]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cumulative_weeks_in_top_10</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cumulative_weeks_in_top_10]</local-name>
+            <parent-name>[Top 10]</parent-name>
+            <remote-alias>cumulative_weeks_in_top_10</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Top 10_31688FE249E64AA8BCDF5A1EE4C30D48]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='cntWeeksInTop10' datatype='integer' name='[Calculation_2223933812281782273]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTd([week])' />
+      </column>
+      <column caption='titleSeason' datatype='string' name='[Calculation_2223933812283387906]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[show_title] + &apos; - &apos; + [season_title]' />
+      </column>
+      <column caption='Title' datatype='string' name='[Calculation_2223933812284137476]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='CASE [season_title] &#13;&#10;    WHEN &apos;N/A&apos; THEN [show_title] &#13;&#10;    ELSE [season_title] &#13;&#10;END' />
+      </column>
+      <column caption='Top 10' datatype='table' name='[__tableau_internal_object_id__].[Top 10_31688FE249E64AA8BCDF5A1EE4C30D48]' role='measure' type='quantitative' />
+      <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+      <column caption='Country Iso2' datatype='string' name='[country_iso2]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Country Name' datatype='string' name='[country_name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Cumulative Weeks In Top 10' datatype='integer' name='[cumulative_weeks_in_top_10]' role='measure' type='quantitative' />
+      <column caption='Season Title' datatype='string' name='[season_title]' role='dimension' type='nominal' />
+      <column caption='Show Title' datatype='string' name='[show_title]' role='dimension' type='nominal' />
+      <column aggregation='Count' caption='Week' datatype='date' datatype-customized='true' name='[week]' role='dimension' type='ordinal' />
+      <column caption='Weekly Rank' datatype='integer' name='[weekly_rank]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Ryan/AppData/Local/Temp/TableauTemp/#TableauTemp_0j7o0v414goovw17dk0m60voy9hx.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/15/2025 11:17:00 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table'>
+            <columns>
+              <column datatype='date' date-parse-format='yyyy-MM-dd' name='week' />
+            </columns>
+          </relation>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>country_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[country_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>country_name</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Top 10</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>94</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Top 10_31688FE249E64AA8BCDF5A1EE4C30D48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>country_iso2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[country_iso2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>country_iso2</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Top 10</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>94</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Top 10_31688FE249E64AA8BCDF5A1EE4C30D48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>week</remote-name>
+              <remote-type>7</remote-type>
+              <local-name>[week]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>week</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Top 10</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Top 10_31688FE249E64AA8BCDF5A1EE4C30D48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>category</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Top 10</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Top 10_31688FE249E64AA8BCDF5A1EE4C30D48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>weekly_rank</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[weekly_rank]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>weekly_rank</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Top 10</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Top 10_31688FE249E64AA8BCDF5A1EE4C30D48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>show_title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[show_title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>show_title</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Top 10</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9347</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Top 10_31688FE249E64AA8BCDF5A1EE4C30D48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>season_title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[season_title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>season_title</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Top 10</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3621</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Top 10_31688FE249E64AA8BCDF5A1EE4C30D48]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cumulative_weeks_in_top_10</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[cumulative_weeks_in_top_10]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cumulative_weeks_in_top_10</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Top 10</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>164</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Top 10_31688FE249E64AA8BCDF5A1EE4C30D48]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Top 10' id='Top 10_31688FE249E64AA8BCDF5A1EE4C30D48'>
+            <properties context=''>
+              <relation connection='excel-direct.1f5cwqi18mh6px121c22010tg0x5' name='Top 10' table='[&apos;Top 10$&apos;]' type='table'>
+                <columns gridOrigin='A1:H10001:no:A1:H10001:0' header='yes' outcome='6'>
+                  <column datatype='string' name='country_name' ordinal='0' />
+                  <column datatype='string' name='country_iso2' ordinal='1' />
+                  <column datatype='date' date-parse-format='yyyy-MM-dd' name='week' ordinal='2' />
+                  <column datatype='string' name='category' ordinal='3' />
+                  <column datatype='integer' name='weekly_rank' ordinal='4' />
+                  <column datatype='string' name='show_title' ordinal='5' />
+                  <column datatype='string' name='season_title' ordinal='6' />
+                  <column datatype='integer' name='cumulative_weeks_in_top_10' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table'>
+                <columns>
+                  <column datatype='date' date-parse-format='yyyy-MM-dd' name='week' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Top 10 (most-popular-netflix)' inline='true' name='federated.0wfse501w2lqym15xy0eq0oxqh1c' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='most-popular-netflix' name='excel-direct.0qtjiy80n2k1nf17le3km11o6mlz'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Ryan/Documents/DSC 640/most-popular-netflix.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0qtjiy80n2k1nf17le3km11o6mlz' name='Top 10' table='[&apos;Top 10$&apos;]' type='table'>
+          <columns gridOrigin='A1:G41:no:A1:G41:0' header='yes' outcome='6'>
+            <column datatype='string' name='category' ordinal='0' />
+            <column datatype='integer' name='rank' ordinal='1' />
+            <column datatype='string' name='show_title' ordinal='2' />
+            <column datatype='string' name='season_title' ordinal='3' />
+            <column datatype='integer' name='hours_viewed_first_91_days' ordinal='4' />
+            <column datatype='real' name='runtime' ordinal='5' />
+            <column datatype='integer' name='views_first_91_days' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Top 10]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:G41:no:A1:G41:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[category]</local-name>
+            <parent-name>[Top 10]</parent-name>
+            <remote-alias>category</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Top 10_12C0D97E10A54A98BF7F6922FFBE1F57]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rank]</local-name>
+            <parent-name>[Top 10]</parent-name>
+            <remote-alias>rank</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Top 10_12C0D97E10A54A98BF7F6922FFBE1F57]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>show_title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[show_title]</local-name>
+            <parent-name>[Top 10]</parent-name>
+            <remote-alias>show_title</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Top 10_12C0D97E10A54A98BF7F6922FFBE1F57]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season_title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[season_title]</local-name>
+            <parent-name>[Top 10]</parent-name>
+            <remote-alias>season_title</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Top 10_12C0D97E10A54A98BF7F6922FFBE1F57]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hours_viewed_first_91_days</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hours_viewed_first_91_days]</local-name>
+            <parent-name>[Top 10]</parent-name>
+            <remote-alias>hours_viewed_first_91_days</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Top 10_12C0D97E10A54A98BF7F6922FFBE1F57]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>runtime</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[runtime]</local-name>
+            <parent-name>[Top 10]</parent-name>
+            <remote-alias>runtime</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Top 10_12C0D97E10A54A98BF7F6922FFBE1F57]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>views_first_91_days</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[views_first_91_days]</local-name>
+            <parent-name>[Top 10]</parent-name>
+            <remote-alias>views_first_91_days</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Top 10_12C0D97E10A54A98BF7F6922FFBE1F57]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Title' datatype='string' name='[Calculation_2223933812287901702]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='CASE [season_title] &#13;&#10;    WHEN &apos;N/A&apos; THEN [show_title] &#13;&#10;    ELSE [season_title] &#13;&#10;END' />
+      </column>
+      <column caption='Top 10' datatype='table' name='[__tableau_internal_object_id__].[Top 10_12C0D97E10A54A98BF7F6922FFBE1F57]' role='measure' type='quantitative' />
+      <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+      <column caption='Hours Viewed First 91 Days' datatype='integer' name='[hours_viewed_first_91_days]' role='measure' type='quantitative' />
+      <column caption='Rank' datatype='integer' name='[rank]' role='measure' type='quantitative' />
+      <column caption='Runtime' datatype='real' name='[runtime]' role='measure' type='quantitative' />
+      <column caption='Season Title' datatype='string' name='[season_title]' role='dimension' type='nominal' />
+      <column caption='Show Title' datatype='string' name='[show_title]' role='dimension' type='nominal' />
+      <column caption='Views First 91 Days' datatype='integer' name='[views_first_91_days]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Ryan/AppData/Local/Temp/TableauTemp/#TableauTemp_1e15yui00i2pp7192xdh11hkmwho.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/15/2025 11:24:58 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>category</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Top 10</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Top 10_12C0D97E10A54A98BF7F6922FFBE1F57]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rank</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[rank]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rank</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Top 10</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Top 10_12C0D97E10A54A98BF7F6922FFBE1F57]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>show_title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[show_title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>show_title</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Top 10</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>35</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Top 10_12C0D97E10A54A98BF7F6922FFBE1F57]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>season_title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[season_title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>season_title</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Top 10</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Top 10_12C0D97E10A54A98BF7F6922FFBE1F57]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>hours_viewed_first_91_days</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[hours_viewed_first_91_days]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>hours_viewed_first_91_days</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Top 10</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Top 10_12C0D97E10A54A98BF7F6922FFBE1F57]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>runtime</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[runtime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>runtime</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Top 10</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>38</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Top 10_12C0D97E10A54A98BF7F6922FFBE1F57]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>views_first_91_days</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[views_first_91_days]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>views_first_91_days</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Top 10</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>38</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Top 10_12C0D97E10A54A98BF7F6922FFBE1F57]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Top 10' id='Top 10_12C0D97E10A54A98BF7F6922FFBE1F57'>
+            <properties context=''>
+              <relation connection='excel-direct.0qtjiy80n2k1nf17le3km11o6mlz' name='Top 10' table='[&apos;Top 10$&apos;]' type='table'>
+                <columns gridOrigin='A1:G41:no:A1:G41:0' header='yes' outcome='6'>
+                  <column datatype='string' name='category' ordinal='0' />
+                  <column datatype='integer' name='rank' ordinal='1' />
+                  <column datatype='string' name='show_title' ordinal='2' />
+                  <column datatype='string' name='season_title' ordinal='3' />
+                  <column datatype='integer' name='hours_viewed_first_91_days' ordinal='4' />
+                  <column datatype='real' name='runtime' ordinal='5' />
+                  <column datatype='integer' name='views_first_91_days' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Top 10 (all-weeks-global-netflix)' inline='true' name='federated.0pjj3dm137yxv215bmujv0uxxosq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='all-weeks-global-netflix' name='excel-direct.1p1l6jz0uvj204113my8q0emxkts'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Ryan/Documents/DSC 640/all-weeks-global-netflix.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1p1l6jz0uvj204113my8q0emxkts' name='Top 10' table='[&apos;Top 10$&apos;]' type='table'>
+          <columns gridOrigin='A1:K5841:no:A1:K5841:0' header='yes' outcome='6'>
+            <column datatype='date' date-parse-format='yyyy-MM-dd' name='week' ordinal='0' />
+            <column datatype='string' name='category' ordinal='1' />
+            <column datatype='integer' name='weekly_rank' ordinal='2' />
+            <column datatype='string' name='show_title' ordinal='3' />
+            <column datatype='string' name='season_title' ordinal='4' />
+            <column datatype='integer' name='weekly_hours_viewed' ordinal='5' />
+            <column datatype='real' name='runtime' ordinal='6' />
+            <column datatype='integer' name='weekly_views' ordinal='7' />
+            <column datatype='integer' name='cumulative_weeks_in_top_10' ordinal='8' />
+            <column datatype='string' name='is_staggered_launch' ordinal='9' />
+            <column datatype='string' name='episode_launch_details' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Top 10]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:K5841:no:A1:K5841:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>week</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[week]</local-name>
+            <parent-name>[Top 10]</parent-name>
+            <remote-alias>week</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <object-id>[Top 10_EB07E8023FE944E4821F6AA24B011DBD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[category]</local-name>
+            <parent-name>[Top 10]</parent-name>
+            <remote-alias>category</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Top 10_EB07E8023FE944E4821F6AA24B011DBD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weekly_rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[weekly_rank]</local-name>
+            <parent-name>[Top 10]</parent-name>
+            <remote-alias>weekly_rank</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Top 10_EB07E8023FE944E4821F6AA24B011DBD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>show_title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[show_title]</local-name>
+            <parent-name>[Top 10]</parent-name>
+            <remote-alias>show_title</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Top 10_EB07E8023FE944E4821F6AA24B011DBD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season_title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[season_title]</local-name>
+            <parent-name>[Top 10]</parent-name>
+            <remote-alias>season_title</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Top 10_EB07E8023FE944E4821F6AA24B011DBD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weekly_hours_viewed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[weekly_hours_viewed]</local-name>
+            <parent-name>[Top 10]</parent-name>
+            <remote-alias>weekly_hours_viewed</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Top 10_EB07E8023FE944E4821F6AA24B011DBD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>runtime</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[runtime]</local-name>
+            <parent-name>[Top 10]</parent-name>
+            <remote-alias>runtime</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Top 10_EB07E8023FE944E4821F6AA24B011DBD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weekly_views</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[weekly_views]</local-name>
+            <parent-name>[Top 10]</parent-name>
+            <remote-alias>weekly_views</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Top 10_EB07E8023FE944E4821F6AA24B011DBD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cumulative_weeks_in_top_10</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cumulative_weeks_in_top_10]</local-name>
+            <parent-name>[Top 10]</parent-name>
+            <remote-alias>cumulative_weeks_in_top_10</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Top 10_EB07E8023FE944E4821F6AA24B011DBD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_staggered_launch</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[is_staggered_launch]</local-name>
+            <parent-name>[Top 10]</parent-name>
+            <remote-alias>is_staggered_launch</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Top 10_EB07E8023FE944E4821F6AA24B011DBD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>episode_launch_details</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[episode_launch_details]</local-name>
+            <parent-name>[Top 10]</parent-name>
+            <remote-alias>episode_launch_details</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Top 10_EB07E8023FE944E4821F6AA24B011DBD]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='CntWeeksInTop10' datatype='integer' name='[Calculation_2223933812278448128]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([week])' />
+      </column>
+      <column caption='titleSeason' datatype='string' name='[Calculation_2223933812283691011]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[show_title] + &apos; - &apos; + [season_title]' />
+      </column>
+      <column caption='Title' datatype='string' name='[Calculation_2223933812284563461]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='CASE [season_title] &#13;&#10;    WHEN &apos;N/A&apos; THEN [show_title] &#13;&#10;    ELSE [season_title] &#13;&#10;END' />
+      </column>
+      <column caption='Top 10' datatype='table' name='[__tableau_internal_object_id__].[Top 10_EB07E8023FE944E4821F6AA24B011DBD]' role='measure' type='quantitative' />
+      <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+      <column caption='Cumulative Weeks In Top 10' datatype='integer' name='[cumulative_weeks_in_top_10]' role='measure' type='quantitative' />
+      <column caption='Episode Launch Details' datatype='string' name='[episode_launch_details]' role='dimension' type='nominal' />
+      <column caption='Is Staggered Launch' datatype='string' name='[is_staggered_launch]' role='dimension' type='nominal' />
+      <column caption='Runtime' datatype='real' name='[runtime]' role='measure' type='quantitative' />
+      <column caption='Season Title' datatype='string' name='[season_title]' role='dimension' type='nominal' />
+      <column caption='Show Title' datatype='string' name='[show_title]' role='dimension' type='nominal' />
+      <column aggregation='Count' caption='Week' datatype='date' datatype-customized='true' name='[week]' role='dimension' type='ordinal' />
+      <column caption='Weekly Hours Viewed' datatype='integer' name='[weekly_hours_viewed]' role='measure' type='quantitative' />
+      <column caption='Weekly Rank' datatype='integer' name='[weekly_rank]' role='measure' type='quantitative' />
+      <column caption='Weekly Views' datatype='integer' name='[weekly_views]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Ryan/AppData/Local/Temp/TableauTemp/#TableauTemp_07532m91pxiw7y13q5zda1qocxhw.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/15/2025 11:40:53 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>week</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[week]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>week</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Top 10</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>147</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Top 10_EB07E8023FE944E4821F6AA24B011DBD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>category</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Top 10</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Top 10_EB07E8023FE944E4821F6AA24B011DBD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>weekly_rank</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[weekly_rank]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>weekly_rank</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Top 10</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Top 10_EB07E8023FE944E4821F6AA24B011DBD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>show_title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[show_title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>show_title</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Top 10</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1516</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Top 10_EB07E8023FE944E4821F6AA24B011DBD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>season_title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[season_title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>season_title</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Top 10</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>734</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Top 10_EB07E8023FE944E4821F6AA24B011DBD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>weekly_hours_viewed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[weekly_hours_viewed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>weekly_hours_viewed</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Top 10</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1763</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Top 10_EB07E8023FE944E4821F6AA24B011DBD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>runtime</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[runtime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>runtime</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Top 10</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>281</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Top 10_EB07E8023FE944E4821F6AA24B011DBD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>weekly_views</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[weekly_views]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>weekly_views</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Top 10</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>146</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Top 10_EB07E8023FE944E4821F6AA24B011DBD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cumulative_weeks_in_top_10</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[cumulative_weeks_in_top_10]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cumulative_weeks_in_top_10</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Top 10</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Top 10_EB07E8023FE944E4821F6AA24B011DBD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_staggered_launch</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[is_staggered_launch]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>is_staggered_launch</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Top 10</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Top 10_EB07E8023FE944E4821F6AA24B011DBD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>episode_launch_details</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[episode_launch_details]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>episode_launch_details</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Top 10</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>68</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Top 10_EB07E8023FE944E4821F6AA24B011DBD]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Top 10' id='Top 10_EB07E8023FE944E4821F6AA24B011DBD'>
+            <properties context=''>
+              <relation connection='excel-direct.1p1l6jz0uvj204113my8q0emxkts' name='Top 10' table='[&apos;Top 10$&apos;]' type='table'>
+                <columns gridOrigin='A1:K5841:no:A1:K5841:0' header='yes' outcome='6'>
+                  <column datatype='date' date-parse-format='yyyy-MM-dd' name='week' ordinal='0' />
+                  <column datatype='string' name='category' ordinal='1' />
+                  <column datatype='integer' name='weekly_rank' ordinal='2' />
+                  <column datatype='string' name='show_title' ordinal='3' />
+                  <column datatype='string' name='season_title' ordinal='4' />
+                  <column datatype='integer' name='weekly_hours_viewed' ordinal='5' />
+                  <column datatype='real' name='runtime' ordinal='6' />
+                  <column datatype='integer' name='weekly_views' ordinal='7' />
+                  <column datatype='integer' name='cumulative_weeks_in_top_10' ordinal='8' />
+                  <column datatype='string' name='is_staggered_launch' ordinal='9' />
+                  <column datatype='string' name='episode_launch_details' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.0pjj3dm137yxv215bmujv0uxxosq'>
+      <datasources>
+        <datasource caption='Top 10 (all-weeks-global-netflix)' name='federated.0pjj3dm137yxv215bmujv0uxxosq' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0pjj3dm137yxv215bmujv0uxxosq'>
+        <column-instance column='[week]' derivation='None' name='[none:week:qk]' pivot='key' type='quantitative' />
+        <column aggregation='Count' caption='Week' datatype='date' datatype-customized='true' name='[week]' role='dimension' type='ordinal' />
+      </datasource-dependencies>
+      <filter class='quantitative' column='[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:week:qk]' included-values='in-range'>
+        <min>#2023-01-01#</min>
+        <max>#2023-12-31#</max>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='totalHoursViewed_global'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Global Total Hours Watched</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Top 10 (all-weeks-global-netflix)' name='federated.0pjj3dm137yxv215bmujv0uxxosq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0pjj3dm137yxv215bmujv0uxxosq'>
+            <column caption='Title' datatype='string' name='[Calculation_2223933812284563461]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [season_title] &#13;&#10;    WHEN &apos;N/A&apos; THEN [show_title] &#13;&#10;    ELSE [season_title] &#13;&#10;END' />
+            </column>
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_2223933812284563461]' derivation='None' name='[none:Calculation_2223933812284563461:nk]' pivot='key' type='nominal' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[week]' derivation='None' name='[none:week:qk]' pivot='key' type='quantitative' />
+            <column caption='Season Title' datatype='string' name='[season_title]' role='dimension' type='nominal' />
+            <column caption='Show Title' datatype='string' name='[show_title]' role='dimension' type='nominal' />
+            <column-instance column='[weekly_hours_viewed]' derivation='Sum' name='[sum:weekly_hours_viewed:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Count' caption='Week' datatype='date' datatype-customized='true' name='[week]' role='dimension' type='ordinal' />
+            <column caption='Weekly Hours Viewed' datatype='integer' name='[weekly_hours_viewed]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:Calculation_2223933812284563461:nk]' direction='DESC' using='[federated.0pjj3dm137yxv215bmujv0uxxosq].[sum:weekly_hours_viewed:qk]' />
+          <filter class='categorical' column='[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:category:nk]'>
+            <groupfilter function='member' level='[none:category:nk]' member='&quot;Films (English)&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:category:nk]</column>
+            <column>[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:week:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:Calculation_2223933812284563461:nk]' value='43' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:Calculation_2223933812284563461:nk]' value='240' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0pjj3dm137yxv215bmujv0uxxosq].[sum:weekly_hours_viewed:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:Calculation_2223933812284563461:nk]</rows>
+        <cols>[federated.0pjj3dm137yxv215bmujv0uxxosq].[sum:weekly_hours_viewed:qk]</cols>
+      </table>
+      <simple-id uuid='{EE90C629-C715-4426-A23D-FEB16B551079}' />
+    </worksheet>
+    <worksheet name='totalViews_global'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Global Total Hours Watched</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Top 10 (all-weeks-global-netflix)' name='federated.0pjj3dm137yxv215bmujv0uxxosq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0pjj3dm137yxv215bmujv0uxxosq'>
+            <column caption='Title' datatype='string' name='[Calculation_2223933812284563461]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [season_title] &#13;&#10;    WHEN &apos;N/A&apos; THEN [show_title] &#13;&#10;    ELSE [season_title] &#13;&#10;END' />
+            </column>
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_2223933812284563461]' derivation='None' name='[none:Calculation_2223933812284563461:nk]' pivot='key' type='nominal' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[week]' derivation='None' name='[none:week:qk]' pivot='key' type='quantitative' />
+            <column caption='Season Title' datatype='string' name='[season_title]' role='dimension' type='nominal' />
+            <column caption='Show Title' datatype='string' name='[show_title]' role='dimension' type='nominal' />
+            <column-instance column='[weekly_views]' derivation='Sum' name='[sum:weekly_views:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Count' caption='Week' datatype='date' datatype-customized='true' name='[week]' role='dimension' type='ordinal' />
+            <column caption='Weekly Views' datatype='integer' name='[weekly_views]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:Calculation_2223933812284563461:nk]' direction='DESC' using='[federated.0pjj3dm137yxv215bmujv0uxxosq].[sum:weekly_views:qk]' />
+          <filter class='categorical' column='[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:category:nk]'>
+            <groupfilter function='level-members' level='[none:category:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:category:nk]</column>
+            <column>[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:week:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:Calculation_2223933812284563461:nk]' value='43' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:Calculation_2223933812284563461:nk]' value='240' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0pjj3dm137yxv215bmujv0uxxosq].[sum:weekly_views:qk]' palette='green_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0pjj3dm137yxv215bmujv0uxxosq].[sum:weekly_views:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:Calculation_2223933812284563461:nk]</rows>
+        <cols>[federated.0pjj3dm137yxv215bmujv0uxxosq].[sum:weekly_views:qk]</cols>
+      </table>
+      <simple-id uuid='{F62402D6-0804-4D1D-B2FB-CF2F42DCCFDC}' />
+    </worksheet>
+    <worksheet name='viewsIn91Days_AllData'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Overall Views for First 91 Days</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Top 10 (most-popular-netflix)' name='federated.0wfse501w2lqym15xy0eq0oxqh1c' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0wfse501w2lqym15xy0eq0oxqh1c'>
+            <column caption='Title' datatype='string' name='[Calculation_2223933812287901702]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [season_title] &#13;&#10;    WHEN &apos;N/A&apos; THEN [show_title] &#13;&#10;    ELSE [season_title] &#13;&#10;END' />
+            </column>
+            <column-instance column='[Calculation_2223933812287901702]' derivation='None' name='[none:Calculation_2223933812287901702:nk]' pivot='key' type='nominal' />
+            <column caption='Season Title' datatype='string' name='[season_title]' role='dimension' type='nominal' />
+            <column caption='Show Title' datatype='string' name='[show_title]' role='dimension' type='nominal' />
+            <column-instance column='[views_first_91_days]' derivation='Sum' name='[sum:views_first_91_days:qk]' pivot='key' type='quantitative' />
+            <column caption='Views First 91 Days' datatype='integer' name='[views_first_91_days]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0wfse501w2lqym15xy0eq0oxqh1c].[none:Calculation_2223933812287901702:nk]' direction='DESC' using='[federated.0wfse501w2lqym15xy0eq0oxqh1c].[sum:views_first_91_days:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0wfse501w2lqym15xy0eq0oxqh1c].[none:Calculation_2223933812287901702:nk]' value='38' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0wfse501w2lqym15xy0eq0oxqh1c].[none:Calculation_2223933812287901702:nk]' value='256' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0wfse501w2lqym15xy0eq0oxqh1c].[sum:views_first_91_days:qk]' palette='green_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0wfse501w2lqym15xy0eq0oxqh1c].[sum:views_first_91_days:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0wfse501w2lqym15xy0eq0oxqh1c].[none:Calculation_2223933812287901702:nk]</rows>
+        <cols>[federated.0wfse501w2lqym15xy0eq0oxqh1c].[sum:views_first_91_days:qk]</cols>
+      </table>
+      <simple-id uuid='{6BF2E572-A4FC-488F-85C0-8EDA850998EE}' />
+    </worksheet>
+    <worksheet name='weeksInTop10_byCountry'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Weeks in Top 10</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Top 10 (all-weeks-countries-netflix)' name='federated.1najukk1sf6t2e1fcwya11b9wvlq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1najukk1sf6t2e1fcwya11b9wvlq'>
+            <column caption='cntWeeksInTop10' datatype='integer' name='[Calculation_2223933812281782273]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTd([week])' />
+            </column>
+            <column caption='Title' datatype='string' name='[Calculation_2223933812284137476]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [season_title] &#13;&#10;    WHEN &apos;N/A&apos; THEN [show_title] &#13;&#10;    ELSE [season_title] &#13;&#10;END' />
+            </column>
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column caption='Country Name' datatype='string' name='[country_name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[Calculation_2223933812284137476]' derivation='None' name='[none:Calculation_2223933812284137476:nk]' pivot='key' type='nominal' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[country_name]' derivation='None' name='[none:country_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[week]' derivation='None' name='[none:week:qk]' pivot='key' type='quantitative' />
+            <column caption='Season Title' datatype='string' name='[season_title]' role='dimension' type='nominal' />
+            <column caption='Show Title' datatype='string' name='[show_title]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_2223933812281782273]' derivation='User' name='[usr:Calculation_2223933812281782273:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Count' caption='Week' datatype='date' datatype-customized='true' name='[week]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.1najukk1sf6t2e1fcwya11b9wvlq].[none:Calculation_2223933812284137476:nk]' direction='DESC' using='[federated.1najukk1sf6t2e1fcwya11b9wvlq].[usr:Calculation_2223933812281782273:qk]' />
+          <filter class='categorical' column='[federated.1najukk1sf6t2e1fcwya11b9wvlq].[none:category:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Films&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;TV&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1najukk1sf6t2e1fcwya11b9wvlq].[none:country_name:nk]'>
+            <groupfilter function='member' level='[none:country_name:nk]' member='&quot;Japan&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1najukk1sf6t2e1fcwya11b9wvlq].[none:week:qk]' included-values='in-range'>
+            <min>#2023-01-01#</min>
+            <max>#2023-12-31#</max>
+          </filter>
+          <slices>
+            <column>[federated.1najukk1sf6t2e1fcwya11b9wvlq].[none:country_name:nk]</column>
+            <column>[federated.1najukk1sf6t2e1fcwya11b9wvlq].[none:category:nk]</column>
+            <column>[federated.1najukk1sf6t2e1fcwya11b9wvlq].[none:week:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.1najukk1sf6t2e1fcwya11b9wvlq].[none:Calculation_2223933812284137476:nk]' value='38' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1najukk1sf6t2e1fcwya11b9wvlq].[none:Calculation_2223933812284137476:nk]' value='352' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1najukk1sf6t2e1fcwya11b9wvlq].[usr:Calculation_2223933812281782273:qk]' palette='purple_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1najukk1sf6t2e1fcwya11b9wvlq].[usr:Calculation_2223933812281782273:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1najukk1sf6t2e1fcwya11b9wvlq].[none:Calculation_2223933812284137476:nk]</rows>
+        <cols>[federated.1najukk1sf6t2e1fcwya11b9wvlq].[usr:Calculation_2223933812281782273:qk]</cols>
+      </table>
+      <simple-id uuid='{F609462A-084E-4F00-A9E3-46897EE8EB78}' />
+    </worksheet>
+    <worksheet name='weeksInTop10_global'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Global Total Weeks In Top 10</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Top 10 (all-weeks-global-netflix)' name='federated.0pjj3dm137yxv215bmujv0uxxosq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0pjj3dm137yxv215bmujv0uxxosq'>
+            <column caption='CntWeeksInTop10' datatype='integer' name='[Calculation_2223933812278448128]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([week])' />
+            </column>
+            <column caption='Title' datatype='string' name='[Calculation_2223933812284563461]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [season_title] &#13;&#10;    WHEN &apos;N/A&apos; THEN [show_title] &#13;&#10;    ELSE [season_title] &#13;&#10;END' />
+            </column>
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_2223933812284563461]' derivation='None' name='[none:Calculation_2223933812284563461:nk]' pivot='key' type='nominal' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[week]' derivation='None' name='[none:week:qk]' pivot='key' type='quantitative' />
+            <column caption='Season Title' datatype='string' name='[season_title]' role='dimension' type='nominal' />
+            <column caption='Show Title' datatype='string' name='[show_title]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_2223933812278448128]' derivation='User' name='[usr:Calculation_2223933812278448128:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Count' caption='Week' datatype='date' datatype-customized='true' name='[week]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:Calculation_2223933812284563461:nk]' direction='DESC' using='[federated.0pjj3dm137yxv215bmujv0uxxosq].[usr:Calculation_2223933812278448128:qk]' />
+          <filter class='categorical' column='[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:category:nk]'>
+            <groupfilter function='member' level='[none:category:nk]' member='&quot;Films (English)&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:category:nk]</column>
+            <column>[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:week:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:Calculation_2223933812284563461:nk]' value='43' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:Calculation_2223933812284563461:nk]' value='240' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0pjj3dm137yxv215bmujv0uxxosq].[usr:Calculation_2223933812278448128:qk]' palette='purple_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0pjj3dm137yxv215bmujv0uxxosq].[usr:Calculation_2223933812278448128:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:Calculation_2223933812284563461:nk]</rows>
+        <cols>[federated.0pjj3dm137yxv215bmujv0uxxosq].[usr:Calculation_2223933812278448128:qk]</cols>
+      </table>
+      <simple-id uuid='{387FAF7D-FEFC-4F2A-8E26-4C2365446A35}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='72'>
+    <window class='worksheet' maximized='true' name='weeksInTop10_global'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card mode='dropdown' param='[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:category:nk]' type='filter' />
+          </strip>
+          <strip size='2147483647'>
+            <card param='[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:week:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:Calculation_2223933812284563461:nk]</field>
+            <field>[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:category:nk]</field>
+            <field>[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:show_title:nk]</field>
+            <field>[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:week:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{106763D8-EB4A-44BC-BA83-8875607CC10C}' />
+    </window>
+    <window class='worksheet' name='weeksInTop10_byCountry'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card mode='checkdropdown' param='[federated.1najukk1sf6t2e1fcwya11b9wvlq].[none:category:nk]' type='filter' />
+          </strip>
+          <strip size='2147483647'>
+            <card mode='dropdown' param='[federated.1najukk1sf6t2e1fcwya11b9wvlq].[none:country_name:nk]' type='filter' />
+          </strip>
+          <strip size='2147483647'>
+            <card param='[federated.1najukk1sf6t2e1fcwya11b9wvlq].[none:week:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1najukk1sf6t2e1fcwya11b9wvlq].[none:Calculation_2223933812284137476:nk]</field>
+            <field>[federated.1najukk1sf6t2e1fcwya11b9wvlq].[none:category:nk]</field>
+            <field>[federated.1najukk1sf6t2e1fcwya11b9wvlq].[none:country_name:nk]</field>
+            <field>[federated.1najukk1sf6t2e1fcwya11b9wvlq].[none:show_title:nk]</field>
+            <field>[federated.1najukk1sf6t2e1fcwya11b9wvlq].[none:week:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{EC2ADFCD-F0AC-46EC-8E22-69E872C5B52A}' />
+    </window>
+    <window class='worksheet' name='totalHoursViewed_global'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card mode='dropdown' param='[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:category:nk]' type='filter' />
+          </strip>
+          <strip size='2147483647'>
+            <card param='[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:week:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:Calculation_2223933812284563461:nk]</field>
+            <field>[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:category:nk]</field>
+            <field>[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:show_title:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8B40977C-A62F-48CB-9881-41F58D3D3E26}' />
+    </window>
+    <window class='worksheet' name='totalViews_global'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card mode='dropdown' param='[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:category:nk]' type='filter' />
+          </strip>
+          <strip size='2147483647'>
+            <card param='[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:week:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:Calculation_2223933812284563461:nk]</field>
+            <field>[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:category:nk]</field>
+            <field>[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:show_title:nk]</field>
+            <field>[federated.0pjj3dm137yxv215bmujv0uxxosq].[none:week:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BF5BE921-19B4-40C7-B10A-C71E7A2D39FB}' />
+    </window>
+    <window class='worksheet' name='viewsIn91Days_AllData'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0wfse501w2lqym15xy0eq0oxqh1c].[none:Calculation_2223933812287901702:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{577F330B-61AA-4C07-8864-DA3461EFBAE9}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='totalHoursViewed_global' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAfbUlEQVR4nO2dW4xcW3qQv32v2rvuVX1vd/t6LjOZmcwkhBMURkSRQETiER4QT/DKCw88
+      RUhBEVIQCpckIIEA5YHLCEFQAJFRBgaGXE5mJnNmcs4c26dtt9337qque9W+7714KNvn5mMf
+      l+3uqt7re2jbe9dfa632/vf61///61+KEEIgkWQU9bw7IJGcJ1IBJJlGKoAk00gFkGQaqQCS
+      TKMDZNURpCjKVHJCCCn7HLJw9r/rz9uu/ugvnuc9dyPzTC6Xm/o/JUkSdF1/9gelLGmaoqrT
+      Gxqvut/TffMF4N9/8/v0RtMp/by+iedN9izazqwCfONbP+DBUee8uyE5Z+QiWJJpzlQB9vcP
+      AEGapgghSJLJn0J8eO201aKzt8cwSREiJU1Teof3ebB9lz/desDOwRHJw8+OWjsc9EKOdveI
+      0oBvf+v3+NObW6RpSmdvj1GS0h/0Eenke9I0Yn/v8CyHLJlxztQE8jyfNI74l7/5a7zxlbd4
+      +w+/z1/4K79IWU34zv/+n7z1l/86nbs/YqG6wN577xKGPm5s89d+8S3+4DvvsFRMuC/K3P3x
+      OyRmkbWyxqHbwmu3+EtrP4/nB3iDLr/xj/8hP/ETP4334/coL69ijQeM4xSRRBRr66xfWj3L
+      YUtmmDNVgIqt84P3bvNnfvbrVGuLGF/XeX19kVGk8zNvfZ2VeoVF803C2OTrX3yDo5Mmfqxh
+      5kvcuLqBpqS8vlDl3Vvw2ms3KFspudMRh6pAU3Tq1TLVhUXe+nM/x9LyZap1h54bUrQ2QKTs
+      bN+h0qid5ZAlM44iJmTODfpXf+m35CJYIhfBkmyT2Rngd/7gffojfyrZefSpz6PsWbT9WAGC
+      IJiqkXnFNM2pI5RxHE8dncyabJIkqKo69UM8bdsTL+PnjAQrikIul5uqg/PII9erRJLZSPAv
+      /5vf46Q7mk5YANPO6lJ2ptrOrAJs7bbYbfbPuxuSc2auvEBCpMRxzHTWiyBNE1Jp+kg+wlzN
+      AL2DPfa9iMura6iJywf3Drl+7RKBH+LHgnJepdlqkhoVGiUbdzykWq/RavfYuLTK/s59Qiyu
+      XV4/76FIZoS5mgEeMeo2Oe77LDTqtFpt4sjn7r1tWu0+Sws1KpUyreN9wihh69YdTF0wjgFF
+      Y31t5by7L5kh5moGKDQaOIdNirVlqqpgOOjTWLyEmgS8/ppNKacSoUPos3ntNbqdU1bXvoCm
+      Kaga9BQYjcdYldJ5D0UyI8yVAhg5h6tXrzz+94euW5NVu/ipz6+srn3s35c2J7LSBSp5xFya
+      QBLJy0LJYmlEIQRbuy3COJlK/kX2uUrZ2Wo7swoghJCpEGcgOxepEFkkihMUZTrdT5KEVExf
+      USJrspo2fTh3+rYnOw5T8fRZPrMK8Dd/9T+z1xycdzck54xcBEsyzdwpQPf0mA+27jByP56+
+      3e92SERKu9MFHtn5aebSvCXPx9yZQNVanb6bcrhzB6tQJfGHVJc3GLSPGYzGHDZ7DDotQKMX
+      BOiRT315nWG3TbFSQdVMlhbkvmDJhLmbAWCyf6FUbWAoCXfubDEc+1hOhXbrlIVanuHYJRZg
+      6SoLy+vE41Pu3N2m3XdZXKifd/clM0Rm3aB/41e+IRfBkvmcASSSl8XcrQFeFqauYxnaeXdD
+      cs5k1gSSkeCzkZ31SLA0gSSZJrMm0HvbTYJpk+GSFFWbMkEra7JpiqqoU29sn7pt8bDtZ8hm
+      VgH+2W9/l4PT4Xl3Q3LOSBNIkmmeWwFGvTZbW3dpPkw5+CQijdi6fYtWd+JjT+MAL/y0qSFE
+      yu7uHgCDwYB2u/1QPsHzn1SyUHB8sMu9B3s8WrX7vg8Idh7sEAzb7Ld6H+0IfhA+7/AkGeO5
+      TaDOYEzRUmj3BkT9E+63fKxkRH1xiWGocqNhUtt8ndHxA4537lCtlBjGJok3ImdbxKnKxtoy
+      BiHNk1MWVtc53L1LvrpO68fvYRWqpOEQq1ClfbyDT57E6/O1n/lZwkTFURJ2j44xkoiDg0O+
+      /LWfYthtE0YBUZKwH44ZdDtolkmvH2CKAbFewbFUKtUqum6yIEukSx7y3ApQyBkcn/SxG0uI
+      MKFeNrDQUTQLEpdcZZX7W7ep1BZYr1RIvB4+GqmqUarU0R/m4A+GLtV6kdFgxOLqZfzAo7i6
+      johjUsegN3CpVuuoVpFhO8EPU5TUpxepOMKl66c0Hj7Iy2trDEZjSpUqR0cnbCzXaQ58akUN
+      TbMwc2WKlQLtw13q69de7m9QMtdcqDhAEvl4sUIhbz3x/mAwoFQqIYTgb/2j/yYXwZKL5QXS
+      jBwF47Pvl0qyHIrk41woBXgevnJ1ibWFKRVCCJi25n0WZVFeoMDtlG2Lhz8+z/kAU3VsjpGp
+      EGcnK1MhJJIZJrMm0H/9ozsM3GgqWSFSFGW6d0c2ZRWmtYGmb1s8PCJJpkI8kW//aJfDzvi8
+      uyE5Z6QJJMk0Mz8DnJ6eooUR1tIChpikSmi6QZok9Hs9ao0GSRQh0pi7D/ZZqjq0+h61WoVa
+      pUKSpuiaSpIKVEBRNVT1Rc7skVwkZl4Buqcn9E6HKCd7xIkJXhurXMOwqsTjLsVikTt3PoBU
+      RbVtnEKRk9MuBwcHjLod3DAgTjQMU6V3tE9t43XeuCoPyJBMmHkFWFm/zNpKwigc44cgwgI5
+      p0ipskDnBBTdoOg4FGtL5HIGSehh5ByWSjYJCnFvyKXlJXQVeraFWZDBMMmHZDYO8Lf/+f+S
+      i2CJXARLsk1mZ4Bv/2iHcRBPJT+PtfbPT1a8kNNBng/wCpCpEGcnK1MhJJIZZua9QK+KX/vt
+      H3A6eNLWy2cjECjThvYzKMvU0tO3LR7+fJZsZhXgoD3iqOuedzck58y5mEBCpKSfWHmkafrE
+      z0ZhgOt6JJ+4H0fh403vIk1JkoRPLmbSNMEPgk9dl2QbRQFVVTA09XxmgHhwQs9YwcElCUZs
+      3T+hXDJwSgsokYtTrOAGAUXHIfYG3N45oVowKVYWEJFLubHM8e49DLsKsUchp7HfjFi7Uidw
+      E5RojFmoMTo9wBUWl1YXURD02qfYlQXKhfx5DFsyI1Qci2LepFHOn5cJJPA9j0F3nzhJqNcr
+      qCok/pDt7Xss1OrUrryJZenYVpVFL0UTMbE34N79ba5qeTRNx9RV9nZ36eQLqFqF7Tt30HSb
+      RqVCOhrQWFxm684D9pUEEQc4dhl3OJAKkHHcIKZayCGEOB8F0JwGykmbeqOBauRIfA+7VEIF
+      HNvGyBfI503iKEIzdVYXG493ttmOQ75YRq+X0XUdTQWnUAA0FJYZehGVogNAGoesbW6SNyBG
+      x/mMzfKSbJE3dYIo4f7xILtxgL/zr/6vXARLZBxAkm0yOwMctIckT3Y8PZPJ4c/THa6RPdn0
+      YSR4KvFX3u/MKoBMhTgb2VlPhchsIMydMhEOHr1Zpps+MiebpmhTvmheStvR02UzqwC//B/e
+      5rjnnXc3JOeMXARLMs3FngHSBD9KyFnmefdEcsbUizlGXsSV5RKnA49i3uT+yYCSbZI3dZIk
+      JU7PKRB2ZqQh3YGPkZzQHsWYRNiVRRbr5fPumeQVo6kKhq5y3HVZqdq0hz6NUp56McdCOc9B
+      e4R+XrlAZ4fC8cEuIvZJ1Bx5Q0EYI5AKcOGpF/MU8wlRknLUdbm+UmbvdMTpwMMyNHKmTpqK
+      7LpB/+6//X9yEZwxCjmDkf/xcphyESzJDJ98+OGiL4KfgpMzKOSnjAU8LHkvZV+x7Bm0nVkT
+      SEaCz0Z21iPB0gSSZJrMmkA/3u0QxNOF2NM0QVWnS9DKmqxIH54PMOUM8GL9fnZdoMwqwDd+
+      f4uT/nRVISQXB2kCSTLNTM0AraNdcpVljvd3uXHj+sfu9ft9yuUPA1ijdhNXt+k3j7hx48bj
+      64HnYeTzn9ZskbJzfxuzWGO5UX2Fo5C8CixDY6GcJ4gSHGsSxArjlGbf48ZqmTBKyFs6nWFA
+      2Tb54LDHer2AEALb0umNQ5Yqee4c9Qmi5PH3zpQCRCmMDrbpDiIOD44QSUB3MCJnGfhRyjvf
+      +0OWVjfRijWWDEF32OS03aNQOAKRcO/eNpVSGafs8P77d7l2/Sp5U0fVDRaW1iiXyyTqTA1Z
+      8jkJooQkSbF0FVPXSB86L1Mh6I4CBm7IjdUKFcdk5EeoD5cduqbihTFrdYft4z6NYo6Dj1QF
+      nykTKO8UUVSTzUvL+OM+fgzrG5uYuoZtO6yub1KvVtlYW8HI5bF1lbVLGxipR6TaNKoVqvUG
+      mmZw5epVqrUaGxvrdHoD8nrK/uHRp+oLSeaDvKmzXHVIU1AVBS+MUVWFRjFHKiYFeOMkxQsT
+      inmTWjGHqigkqaCQMzjpuVxeLNEZBR/73gsRBxiPxtiO80RHQxKHBImCbX14hLwQgl/6d2/L
+      RfAFQFMnD/nnvf5JLoQ94BScz7yn6Sb2hRil5El81kP+eR5+uCAKMA1f2qyzMfU5wWLqyKaU
+      na22L4QJ9LzIVIizk5WpEBLJDJNZE+i//8kDht502aBCpCjKdO+ObMoqTJvS+ar7nVkF+P7d
+      Jk3pBco80gSSZJo5nAEEB/sHoCjUa1U0w0RlEvbb2d7CjVWuX15HNyyCwMcyDYIood/tUq9X
+      UXUTXZN6P+uUbXOyaSn3KI3BptX36Ix8NhpFhn44ifIrCqqicPe4z5c264z9iJJtMnBDCnmD
+      9x60n3pAyhwqgELJVul6Btv37yNESCHfwHAc4jjBMnS++/YfUa5UMfIOQZiQUxXMYp4H332b
+      +qUbvHZl/bwHIXkGfTfEtnTCOKXqWPRGAaahEsYp4yCilDcp5Aw6o4AEgaoodEc+SxWbe8d9
+      bqxUOOyM0TSFOPlsFZhDBQC7XMewVfR0jFVYo9tqUisuUClewc7nyRsquUKZXreHnTNRtBz1
+      ahFHVzEcWRFiHqgVLEp5k4EXMvIjbEvHCxIapRxVx+Ko6xIn6eO8n4VyDk1VuL3fZaXq8P5e
+      h8VS/qkPP2Q4DvD3/uN35SJYIhfBkmyT2Rng+3dP8MMpt0SKFHVK37SUna22M6sAMhXibGRl
+      KoREMsPMpRfoZfCb33yfzjB49gefwDzWmJpH2bNoO7MK0Bn6NAfTKYDk4nBhTKA0ien3B3zW
+      kiaOpz8SSfLqMHX18Z+6OonqwqSQraooOJaOokDenNQGMnQVQ1PJmxqqAo71Yu/wCzMDhIMT
+      Dlohg/GYNE4p5jXGYUrr+JDF1UskgY+TN9DtijwpfkYwdZX1usNJz+PN9Qr3m0NURaE18Fmu
+      5CfBrzDBMlSSVHB7v8dGo4DCZLO7qkCcTjbFtwbTxXQuzAwghKDZatE/PWF3b5/2wMUdj6lW
+      qwS+B6R8cOs2zdP2eXdV8pAkFeiqykrVJmfoxInANnVMXZ1sdFcmG90VFNJUoGvqQw8ek9r+
+      j+6/wI6zC+MGTZMYoajEUcho7BGHHk6phpKEaOYkTB76Hopukc+Z/P3/9CdyDXDOGJpKxTHp
+      jAIUBWxTR1UVNEVBMMkHKuQMhl6IYxmYuso4iBFCYOgabhBTzBv03XDqPlwYE0jVJkPRrByW
+      lQMeFb/KPf6MYUwqQ1wQnZ97oiT9mOky8D69R/vRwz38RG3/R3VdX+ThhwtkAkkk03BhTKDn
+      QQhBe+gz7ciTNEGbsmJx9mQnFZqntdKnbVswqSz9LNnMKoBMhTgb2VlPhbgwa4DnZeCFCDHd
+      f8rkrZQ8+4NS9oVmj5fT9tNlM6sAv/6779OSXqDMIxfBkkwzMzOAOx6hGzpJqpPPfaJbacL2
+      9j0qjWVyloWdt576XUkc0u276ITodgUnb75QQpbkxRFC0DvepVBbpLWzxfK1L9JvHlBZ3qDf
+      3EdVNbxhj2JjmX7zgKUrXyAKXIbtYyy7RJomxKGPXaqRL1ZeWr9mRgFMDd7501tc3Vzhwc6I
+      RqOCIlK6nR6bmxskikbzcI983uHktMPaagMUlYP9I7745Z/kZG8b0y7ijn02NxbZPzgklw5I
+      nXVK+QQvFOAPMCvLbKwsnPdwM0kU+qiaTuCN6B7t0G8dUlneYNA6QtV1rHyB43s/ZmHjNXon
+      e8RhACLFHXQAUBSFwenRS1WAmTGB9FyBzY1VotAn8n1azSOOm22KlTqmrqIqKhublwjcEaNB
+      j944IPZdxl5Emsb4QYjrjmksLKAoCiVLRbMriDRBM/OUCzn6/QGpPB/gnBD0m/t0jx6AEHjD
+      HsF4wLjbAgXSJCH0x+hmjtbOB5PCtqqKO+iQxhFxGOANe48Dni+LzLpBf+W/vCMXwTOAPx6S
+      c4pPvG7ZhRfK8/k8zIwJJMkmT3r4n3b9ZZNZBSjnzWfWjJFcfDJrAslI8NnIznokeGYWwRLJ
+      eZBZE+jd3Q5BPN3klz5M8JKyz0akDzesTDkDTN+2QKQTT9LTyKwC/I8f7NGasiqE5OIgTSBJ
+      pvnsGUAI3nv3HZzKMovVAr7rQd6mnDcJY0Gv0yGvpQzIcbJ3n69+5UtEqYKSROimheu6FEtl
+      NPXDqe9of4dOp8vKldewNBWVhNPTNgtLK5we7dIbemxev46IY0xdQagGuqaixB63to/50pvX
+      uLv1AbliCZEo1CoOJ90Rl5br7B82ubx5icFgQDBo0xN5rGiImi9Rdhx0XQUEmpnD1KfPTpR8
+      foQQ7L3/PZaufpH9Wz+gtnaF0BuzdOVNTvfuYjklTne3sJwi3qDL8vUv4Y/6DFqHWE4JkSbE
+      YYBdqrGw+dor6eNTTaDAHZGvxHzv7e9SX1ymYKvc6nnYOYdG2UFoJrHXIVVNdnd3ieIUSFFT
+      j1gv0ogMwvEJbhBRrNRJkwTNyHN6+IBmZ0ytXHisIDEqlxaL3H2wj63DoHWI3VjntasbHO3t
+      0+72idLL6LkiC9Ui97cPGXdPiOwa+/v7RImC2zvi4MQlHA649MVV+vs9NFXQOjoh1lLaRwc0
+      Ll3nxmV5PsBZoCgKhfoSmmGimxaWUyRNJuVpSo0V/HEfp7pAv3nA8tUvEIwHJFGEXa6DEKAb
+      6GaONJ0uHfpz9fEz3aBC4PoecRTRbbdwihV6gzGNis3QF1RLNoaq4gU+6CaELm6sokRjrEKJ
+      XC6Pik7uI4ltruti2zad1jFurFCrlIm8IcIsYCQezb7HUqMKCoz7XVItT6lok8QxOUMlUizc
+      XpNYMSk5DmEwJtUsCMeMQlhbqvHgwR6Li0vkig6R65K3cwz7Y4ycSe/0BN2uUq8U+Ae//SO5
+      BnjFCJGyf/uH2KUa/rhPsbZEr7mPU64j0pQ0SVBUhWJ9me7RDpZTJF+oMOq2yDnFhwlwwUtP
+      gPsomY0DSAWQgFwESzJOZmeAd3c6j0trPC/z6I+fR9mzaDuzCiBTIc5GVqZCSCQzTGYjwf/i
+      W7fpjKatKjaP1fbnUfbVt51ZBRh6Eb0XLKsnmX/m2gTy3TGt1il++PG6kXEcE0cRQkAURUSR
+      PBvgLIh8jzSJGffbxFFI6I0RQhBHIe6gQ+i7hN4Yb9gjiSOEEIx7p6RJgjvoEAU+gTs80z7P
+      9QygqHB8fEK/e4pVqGCICLvSoN8+JogUSkUHz+sjUgtFiSmWKySpoFGrPvvLJc9N//SQnFPC
+      Hw0YdVqc7t3h9bf+Iq29O4w6LexSFRCkSYJh5bHLdYadE463b2JYOTTdRIiUtde/+sq3Qj5i
+      rmcAK5enVCySd4poacCtW7dotXuTX55IGY9dAAK3y+1bd9k7OKFSfjURRQkoqoo37NFvHaCo
+      KkkcMeq1HkZ9Y4RIH9b2n7ifkzhEJAmKoiDSFIE488rdc+4GFcRx8vhtEfgempFD1yYKkArl
+      cRq657pYeRvT0BFC8Ku/866MBL9k3GEXBKRxhJl30AyLcf8Uu1glCjx0c1LPKYljQMBDd7Tl
+      FAnd0eO8HzNnn1mf59oEAuVjfl7bKXzknsZHcz6LpdKZ9Sqr2MVPm5al+jLA44cfwHhCXbNc
+      ofzK+vU05toEkkhelDk3gaZDCMHADRFT+peTJEHTpqyXnzXZNEFTVab15U/ftiBJU3k+wJOQ
+      qRBnJzvrqRBzvgaYnp4bkk55PkCaJqhT1qzPpuz0M8Cr7ndmFeC3fn+b9vjTh7JJsoVcBEsy
+      zVwoQL/d5P2bt+gNxh+77o363N1+QJJOljFxPEl5CFwXmfwwPb3mAaHncrx9C2/Y42DrXeIw
+      QAhBa+8eveYhneNdmjt3GPc7pEnC3u0f4g37HN79MYP2CacH9897GJ+LuTCByvU6vWFI53iX
+      ViuPP2hRXr6CCEasNopsbT1guV5g+2CHtdVNhOtRuXyJu+/9ELNQR9dUNFVnNOpQW9qgUSk8
+      u9EMo5sW3qiHomrs3PwBiqLQiK8x7nfoNQ8oVBdApMCkXn/ou5Qay9x/74+pr12h3zpEN6xJ
+      ifMzSmmYlrlQAADd0LHtBoiYndMITVXRDZX7e0fYls29+3vUluuomgaa4MH9HTw/ACvB81wE
+      CkVDodcfSAV4BoPWEVEYEAUexdoi3rBP++A+mmniDfuTsuVAFPjYpSppEtPcuUOpscygdYRd
+      qhJ642e2Mwtk1g36T755Sy6Cn4PAHWHmnU+90aMwQFEUdMM8p569GHMzA0jOF8t+8qxpmE8/
+      r23WyawCVB0TRZmy4CsCZUq/tpSdrbYzawLJSPDZyM56JHgu3KASyasisybQe3s9gimPSJrH
+      GjvnKquoU+9rn7ptAal4tmxmFeDbN0+kF0giTSBJtpm5GUAkMZ1en/5gSLlcol6rAdDt9tDi
+      iNzCAk/zOPdOT2h2R1TrdRZqH9//641dLMd+oSo1Fx0hBPsf/IiFS9fYu/0jqkvreMMe66//
+      JEfbN9ENE3fQwy5VGLRPWH/tKwTemM7xLnapShIGJElMvlihsXblvIfzTGZOARRVo9c6YBTn
+      0NUB7/zxH/LGT/95/PYBvfaQyrDN3kGPG5sr+MM+H+we8fO/8Au8+/b/oX7ly+REQMGYHLyx
+      v39AwRQkiknz6IBSqczS5lWWa+ez/W4eUBQFu1Rl2GmxfPVNWrt3gEmpc4DO0S6KquKPB1x6
+      46sMOieINMUp14kCD003UHWDOPDPcxifm5lTABQFM1fiSqmArxpsXr1GybYoWessL8b0A5e1
+      FQtDVSiuXSLW8xgKLKysY+cMHE3hqDmmtrREToNRv02s5FhdWcYplOTb/xkIkdI7OaDUWKb5
+      YIvaygb90yO6x3uYOZv62mXcQZd8scrxg9sUa0tYeYf+6fFkBohCkjgiX5qP0jOZjQP802/e
+      lovg5yBNkkme1ROuKy/g5z9vZm8GkMwkT3r4n3Z9XsisAnz5UoVxON1WuxdJ85Wys9V2Zk0g
+      mQpxNrIyFUIimWEyawL97ntHjAJpAp2NLEybC/Gq+51ZBbh7MpReIIk0gSTZZsZmAMGDm+/Q
+      U6oUTFhfX2c8GlGrV7j57rvodplayUGNfdTKIkQRtpXw/rvblBcr5M0qCwsOcRwRJQqmGHHr
+      fofr1y6TMzUCb4xmOeTMGRv2OXN8/zZ2scLx/dtY+QLeqM/a619m2G7iDjoUqgv0Tg7QDJNC
+      pU55YYXdm++QL5bxRn2cUo0o9Lny5bfmLh4wY0+CwsrqMpaoMGofcue9H9IOEn7qp3+GNE3J
+      WSp3b93EKVYITtqgGHzpjVVQNBSRcrp/QBzl2T/pYNslXt+oIAQMey0OvIje0R6NS9e4trl2
+      3gOdKSqLq/jjEcX6Er2TA5Yuv0bgjijVl2ju3mH56pvk7CLusEeapoS+y+LmDY62b1Ff2SD0
+      PXJ28byHMRUzpgCg2zUqGFTyl0iXl7BPTsnrKtdf/wI5S4ckpVyuoKjQG/oYukOhmKexsMxC
+      NabV6fHG9St4ocDIOTi5AaZh4Gh5atevoeVlHtAn6Z8eI5IUTdO58pU/S+dwFyvvkKYJ669/
+      Bd0wcco14ijEyOVAgD/ucf1rP0f3eJ/a6iah787d2x8yHAf49W99IBfBErkIlmSbzM4Ad06G
+      RHJL5EzLnkXbmVUAmQpxNrIyFUIimWFmzgt0Vvzr72zTcadcBAumrnIgZWer7cwqgB8leFOm
+      Q0suDnNhAnVOT+iP3CfcEYThh2/xYb/LyP2svaiCKJKnBnySJI7wx0O80QBvNGDYaT4+C6DX
+      PCCJIwanxwTuGHfQBZh8Jgon95OYfuvozA+4flnMxQxwdHDA4tom946PKFdKdLpdcnYRS08Z
+      D3wWV5ZRNY0H29ssrG+QeCMiVWU88hl2jllcWWfse4zaPVavXKNWds57SDND6Ln0T4+JQg+R
+      TGbEgXGCU64x6rVp7tzBcoogBIqqsl4o0znew793k0KlztG9mzjlGvli+UwPuH5ZzMUMUKzU
+      sJSArQ9ustf2KDgOhiLwfR9VN7i39QGqYVKr1+h2utzb2WPv/gOiJKJULjPo9zBMk9riEqE7
+      H3XrzwohUvqtQ5IomqQ5BB4ASRThjwZoukHouxOvShwR+S6R76Hp+uS+YRJ446kLDZ83c+EG
+      TdMURYHAD9BNE/WhS00IgUhjTlpd1laXCPwATTeYrH4mJT4QKamYuONM03x8/Te+tSUjwUAc
+      BkRhgGHlABBpQhxFKIqCoqoYVp44DNB0HZGmuMMuOaeMbppEgY9p5YlCH8PKy1SIeUEIIRVA
+      AsyJCSSRvCoyOwP4YQxT2q1JkqBNWQ4km7LTH5Q9fduCJEmfKTsXXqBXgWVoL5AKIdD16R6I
+      rMkmCS+YCjFd20IIEpVnymZWAU6HAekLvZWmiylkUfZFFGDqtoUgSdNnymZWAb7xvT06chGc
+      ef4/6JUj2vzXb8MAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='totalViews_global' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='viewsIn91Days_AllData' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='weeksInTop10_byCountry' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='weeksInTop10_global' width='192'>
+      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
+      I4uIXziWQ64AAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
